@@ -1,19 +1,20 @@
-# 🚀 Football Transfer Value Prediction Model
+# 🎯 Football Transfer Value Prediction Model
 
-## Project Overview
+## 🔎 Project Overview
 This project develops a **machine learning model** to predict football players' transfer market values based on their performance statistics and other relevant factors. The model achieves the following metrics:
 
-- RMSE: €9.98 million
+- **RMSE:** €9.98 million
 
-- MAE: €6.07 million
+- **MAE:** €6.07 million
 
-- R²: 0.624
+- **R²:** 0.624
 
 While these results show promise, the model should be considered a foundational tool that can be enhanced with additional data sources.
 
-# Data Sources
+## Data Sources
 
-📊 FBref.com Parser (Player Statistics)
+📊 **FBref.com Parser (Player Statistics):**
+
 Functionality:
 
 - Automatically scrapes complete player data from Top 5 European leagues (Premier League, La Liga, Bundesliga, Serie A, Ligue 1)
@@ -26,22 +27,23 @@ Functionality:
     
     - Position-specific data (clean sheets for GKs, dribbles for forwards)
 
-💰 Transfermarkt Parser (Market Values)
+💰 **Transfermarkt Parser (Market Values):**
+
 Functionality:
 
 Scrapes only the most recent market valuation for each player in Top 5 leagues from Transfermarkt.com
 
-⚙️ Technical Implementation
+⚙️ **Technical Implementation:**
 
-- In order to update the data, you can run the parse_value_data('file name') function to get up-to-date data on the transfer price of players and the parse_stats_data('file name') function to get up-to-date statistical data on players. 
+- In order to update the data, you can run the ***parse_value_data('file name')*** function to get up-to-date data on the transfer price of players and the ***parse_stats_data('file name')*** function to get up-to-date statistical data on players. 
 
-# Data Freshness
+## 🆕 Data Freshness
 
-stats_data.csv: Updated through March 2025
+**stats_data.csv:** Updated through March 2025
 
-values_data.csv: Winter 2025 window valuations
+**values_data.csv:** Winter 2025 window valuations
 
-# Key Features
+## 🛠️ Key Features
 The model considers:
 
 - Performance metrics (goals, assists, xG, etc.)
@@ -52,7 +54,7 @@ The model considers:
 
 - Team performance factors
 
-# Limitations
+## ⚠️ Limitations
 Current model limitations include:
 
 - Focus on statistical factors only
@@ -63,7 +65,8 @@ Current model limitations include:
 
 - No contract status information
 
-# Future Improvements
+## ⏳ Future Improvements
+
 Planned enhancements:
 
 - Add social media/commercial metrics
@@ -74,8 +77,9 @@ Planned enhancements:
 
 - Develop interactive visualization tool
 
-# Project Structure
+## 🧩 Project Structure
 
+```bash
 /football-player-value-prediction
 │── /data
 │   ├── stats_data.csv       # Player performance data
@@ -88,6 +92,7 @@ Planned enhancements:
 │       └── value_parsing_script.py                # Data collection script
 ├── requirements.txt            # Python dependencies
 └── README.md                   # This file
+```
 
-# Dependencies
+## Dependencies
 Python 3.11+ with packages listed in requirements.txt
