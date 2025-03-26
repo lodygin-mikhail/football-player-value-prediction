@@ -1,0 +1,4 @@
+### Jupyter ###
+# Кэши и временные файлы
+.ipynb_checkpoints/
+*.ipynb
